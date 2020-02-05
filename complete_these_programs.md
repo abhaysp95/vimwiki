@@ -5,11 +5,11 @@
 
 # Programs of Python language:
 
-* [ ] Completed
-	* [ ] Factorial program
-	* [ ] palindrome number program
-	* [ ] armstrong number program
-	* [ ] prime number findig program
+* [X] Completed
+	* [X] Factorial program
+	* [X] palindrome number program
+	* [X] armstrong number program
+	* [X] prime number findig program
 
 
 # Programs and works in HTML:
