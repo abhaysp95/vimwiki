@@ -14,8 +14,8 @@
 
 # Programs and works in HTML:
 
-* [ ] Completed
-	* [ ] Homework on date `05-02-2020`
+* [o] Completed
+	* [X] Homework on date `05-02-2020` file -> [normal_table](~/dox/nhtml/normal_table.html)
 
 
 # Scripts and works on Shell:
