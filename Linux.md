@@ -17,3 +17,12 @@ Some utility command:
 |       |              | /sys/class/backlight/.../brightness file |
 
 * to know the groups in your linux system do: `cat /etc/group`
+* setup ftp:
+	* install vsftpd
+	* edit /etc/vsftpd.conf file, uncomment `write_enable=YES` and `local_enable=YES` and then start vsftpd service. Run ftp <ip-address> on client.
+	* commands are:
+		- dir	=>		display files in current directory
+		- cd "dir"	=>	you know it
+		- put file	=>	upload file from local to remote computer
+		- get file	=>	Download file from remote to local
+		- quit		=>	logout
