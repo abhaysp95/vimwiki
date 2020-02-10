@@ -9,3 +9,8 @@
 	- setting the **PATH** environment variables
 	- Locating environment variables
 	- Using variables arrays
+
+* 7.[[Understanding_Linux_File_Permissions]] - we will learn:
+	- Understanding Linux Security
+	- Decoding the permissions
+	- Working with Linux groups
