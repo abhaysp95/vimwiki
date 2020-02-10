@@ -5,6 +5,7 @@ subtitle: >
 ---
 # To-do list
 
+
 [[install manjaro(acer)]]- Important things before installing it.
 
 [[complete_these_programs]]
