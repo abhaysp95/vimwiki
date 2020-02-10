@@ -346,3 +346,7 @@ The /etc/profile file is the main default startup file for the bash shell on the
 > Be aware that some linux distributions use Pluggable Authentication Modules(PAM). In this case, before the bash shell is started, PAM files are processed, including ones that may contain environment variables. PAM file examples include the `/etc/environment` file and `$HOME/.pam_environment` file. Find more information about PAM at `http://linux-pam.org`.
 
 The other four startup files are specific for each user and can be customized for an individual user's requirements. Let's look closer at these files.
+
+# Learning about Variable Arrays
+
+* From pg no. 194 to 195
