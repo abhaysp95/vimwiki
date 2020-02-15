@@ -82,7 +82,7 @@ Python interpreter also has help command which displays the section from the pyt
 	>>> help(random.randint)
 ```
 
-# List
+## List
 
 * List is defined in following way:
 ```py
@@ -123,3 +123,20 @@ Python interpreter also has help command which displays the section from the pyt
 		shanker
 		pathak
 	  ```
+
+* `List` in python are of static type.
+
+## Array:
+
+* `Array` in python are of dynamic type:
+```py
+	>>> size=int(input("Enter number: "))
+	>>> lst=[]
+	>>> print("Enter ", size, "Elements :")
+	>>> for i in range(size):
+		n = int(input())
+		lst.append()
+	>>> print("Given elements are: ")
+	>>> for n in range(len(lst)):
+			print(n)
+```
