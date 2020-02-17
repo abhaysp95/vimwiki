@@ -26,3 +26,10 @@ Some utility command:
 		- put file	=>	upload file from local to remote computer
 		- get file	=>	Download file from remote to local
 		- quit		=>	logout
+* `expr` command used to print and perform operations on expressions.
+* `finger` command to store information/view information in the comment field.
+* `readlink` prints resolved symbolic links or cannonical file names
+* `compton-tryone-git` added blur to compton(old package)
+* `sysstat` is a package which provides different system monitoring tools. It contains of followning tools:
+	* `mpstat` reports processors related statistics.
+	* `sar` collect report and store system relative information
