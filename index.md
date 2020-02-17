@@ -47,4 +47,8 @@ subtitle: >
 
 [[Web designing]] - Assginments and notes
 
+[[class_os]] - Some things from OS class
+
+[[html-class]]
+
 raytracer - read@reddit6

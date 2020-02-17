@@ -81,3 +81,62 @@ Python interpreter also has help command which displays the section from the pyt
 ```py
 	>>> help(random.randint)
 ```
+
+## List
+
+* List is defined in following way:
+```py
+	>>> lst=['abhay', 'shanker', 'pathak', 9]
+	# it can be shown in following ways
+	>>> lst
+	['abhay', 'shanker', 'pathak', 9]
+	>>> lst[2]
+	['pathak']
+	>>> lst[-3]
+	['shanker']
+	>>> lst[1:3]
+	['shanker', 'pathak', 9]
+	>>> lst[:2]
+	['abhay', 'shanker', 'pathak']
+	>>> lst[2:]
+	['pathak', 9]
+	>>> lst[0:3:2]
+	['abhay', 'pathak']
+	>>> lst[::-1]
+	[9, 'pathak', 'shanker', 'abhay']
+```
+
+* to iterate a list two ways:
+	* traditional way:
+	  ```py
+		>>> for i in range(0, len(lst)):
+			print(lst[i])
+		abhay
+		shanker
+		pathk
+	  ```
+	* python approach:
+	  ```py
+		>>> for n in lst:
+			print(n)
+		abhay
+		shanker
+		pathak
+	  ```
+
+* `List` in python are of static type.
+
+## Array:
+
+* `Array` in python are of dynamic type:
+```py
+	>>> size=int(input("Enter number: "))
+	>>> lst=[]
+	>>> print("Enter ", size, "Elements :")
+	>>> for i in range(size):
+		n = int(input())
+		lst.append()
+	>>> print("Given elements are: ")
+	>>> for n in range(len(lst)):
+			print(n)
+```
