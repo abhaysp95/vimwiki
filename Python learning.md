@@ -125,6 +125,26 @@ Python interpreter also has help command which displays the section from the pyt
 	  ```
 
 * `List` in python are of static type.
+```py
+	>>> c = [10, 20, 30, 40, 50, 60]
+	>>> del c[3:]		# deletes onwards of index 3
+	# or
+	>>> del c[3:6]		# in range
+```
+
+### some functions/methods for list:
+
+| **Functions**   | **Description**                                           |
+|-----------------|-----------------------------------------------------------|
+| max(lst)        | gets max element of list                                  |
+| min(lst)        | gets min element of list                                  |
+| len(lst)        | gets length of list                                       |
+| lst = list(num) | converts string in list,                                  |
+|                 | where num='3028490' (in string format)                    |
+| sum(lst)        | gives sum of list elements(if elements are in int format) |
+| index(object)   | returns the index value of object                         |
+| count(object)   | number for how many times element appeared                |
+|                 |                                                           |
 
 ## Array:
 
