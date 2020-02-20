@@ -6,11 +6,12 @@
 
 # Programs of Python language:
 
-* [X] Completed
+* [O] Completed
 	* [X] Factorial program
 	* [X] palindrome number program
 	* [X] armstrong number program
 	* [X] prime number findig program
+	* [ ] complete psd-list 8
 
 
 # Programs and works in HTML:

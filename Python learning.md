@@ -134,18 +134,28 @@ Python interpreter also has help command which displays the section from the pyt
 
 ### some functions/methods for list:
 
-| **Functions**   | **Description**                                           |
-|-----------------|-----------------------------------------------------------|
-| max(lst)        | gets max element of list                                  |
-| min(lst)        | gets min element of list                                  |
-| len(lst)        | gets length of list                                       |
-| lst = list(num) | converts string in list,                                  |
-|                 | where num='3028490' (in string format)                    |
-| sum(lst)        | gives sum of list elements(if elements are in int format) |
-| index(object)   | returns the index value of object                         |
-| count(object)   | number for how many times element appeared                |
-|                 |                                                           |
+| **Methods**              | **Description**                                           |
+|--------------------------|-----------------------------------------------------------|
+| max(lst)                 | gets max element of list                                  |
+| min(lst)                 | gets min element of list                                  |
+| len(lst)                 | gets length of list                                       |
+| lst = list(num)          | converts string in list,                                  |
+|                          | where num='3028490' (in string format)                    |
+| sum(lst)                 | gives sum of list elements(if elements are in int format) |
+| index(object)            | returns the index value of object                         |
+| count(object)            | number for how many times element appeared                |
+| pop() or pop(index)      | deletes last element of list or element on index          |
+| insert(loc, object)      | insert object on given index(loc)                         |
+| list1.extend(list2)      | add list2 contents to list1, or                           |
+|                          | list3 = list1 + list2                                     |
+| remove(value)            | give the value present in a list(different from pop)      |
+| reverse(list)            | reverses the list content                                 |
+| sort()                   | sorts the list                                            |
+| sort(reverse=True) | reverse sort list                                         |
+|                          |                                                           |
 
+> **Note**: sum(lst)	, sum is function
+		lst.reverse()	, reverse is method
 ## Array:
 
 * `Array` in python are of dynamic type:
