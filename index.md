@@ -18,7 +18,7 @@ subtitle: >
 
 [BASH](BASH) - Code for bash
 
-[Linux](Linux) - Some thoughts on Linux
+[Linux](Linux) - Some thoughts on Linux shell
 
 [Notetaking](Notetaking) - How a notetaking should be for me
 

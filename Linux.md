@@ -33,3 +33,7 @@ Some utility command:
 * `sysstat` is a package which provides different system monitoring tools. It contains of followning tools:
 	* `mpstat` reports processors related statistics.
 	* `sar` collect report and store system relative information
+
+* `printf` command is used to display the given string, number or any format specifier on the terminal window. It works same way as printf works in programming languages like `C`.
+	- Commonly used format specifiers are `%s, %b, %d, %x and %f`.
+* **Capitalized letters** are treated as less than lowercase letters in test comparisions(uses standard ASCII ordering). However, sort command is just its reverse(uses __locale__ settings).

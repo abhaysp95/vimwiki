@@ -4,6 +4,7 @@ Here are the list of different error codes for shell in the table below:
 
 | s.no. | Error-code | Details                            |
 |-------|------------|------------------------------------|
+| 0.    | 0          | Succesful completion               |
 | 1.    | 1          | Catchall for general errors        |
 | 2.    | 2          | Misuse of shell builtins           |
 |       |            | (according to Bash documentation)  |
