@@ -170,3 +170,38 @@ Python interpreter also has help command which displays the section from the pyt
 	>>> for n in range(len(lst)):
 			print(n)
 ```
+
+* remove method doesn't returns value
+* We can change list items but not of tuple:
+	```py
+	>>> tup = (19, 20, 21)
+	>>> tup
+	(19, 20, 21)
+	```
+
+| List        | Tuple       |
+|-------------|-------------|
+| Mutable     | Immutable   |
+| Slow        | Fast        |
+| More memory | Less memory |
+|             |             |
+
+* Blank tuple => `tup()`
+* One element in tuple => `tup(10, )`, without `,` it'll be treated as `int`.
+* All the slicing rules of tuple will be same to list.
+* printing:
+	```py
+	>>> print(*tup, sep="\n")
+	```
+* Functions will be same as list.
+* Tuple doesn't have sort `(lst.sort())`, it has `sorted(tup)`
+* It doesn't have `lst.reverse()`, it has `reversed(c)`. By default it will return memory address. To see reverse of tuple use:
+	```py
+	>>> reversed(tup)
+	<reversed object at 0x3947....34>
+	>>> list (reversed(c))
+	[.....]
+	```
+* Tuple has `c.index(element)` prints index, `c.count(element)` which gives count of that element inside tuple
+* To append in tuple you have to insert the element in another tuple and then merge with previous tuple.
+*
