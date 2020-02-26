@@ -204,4 +204,38 @@ Python interpreter also has help command which displays the section from the pyt
 	```
 * Tuple has `c.index(element)` prints index, `c.count(element)` which gives count of that element inside tuple
 * To append in tuple you have to insert the element in another tuple and then merge with previous tuple.
-*
+
+## Stings:
+
+* Strings pythons are immutable
+* In python, Strings are stored as individual characters in contiguous memory location(same as `C`).
+* String can be accessed from both the directions forward and backward.(Indexing is same as in `list` e.g., 1,2,3 and -1,-2,-3).
+* E.g.,:
+	* python2
+		```py
+			sname=raw_input('Enter the data: ')
+		```
+	* python3
+		```py
+			sname=input('Enter the data: ')
+		```
+* 3 operators in string:
+	* **Basic Operators**{(m `+` n), or n`*`10}
+		* eg.,
+		```py
+			for i in range(6):
+				print("*"*i, end=" ")
+		```
+		> **Note**: 'salman'+420 is invalid, while 'salman'+'420' or 'salman'+str(420) is valid
+	* **Membership Operators**
+		* two operaors: `in` and `not in`
+		* eg.,
+		```py
+		s=input('enter a string: ')
+		ss=input('enter a substring: ')
+		if ss in s:
+			print('Substring found')
+		else:
+			print('Substring not found')
+		```
+	* **Relational Operators**
