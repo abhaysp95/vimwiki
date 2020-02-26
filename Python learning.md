@@ -205,7 +205,7 @@ Python interpreter also has help command which displays the section from the pyt
 * Tuple has `c.index(element)` prints index, `c.count(element)` which gives count of that element inside tuple
 * To append in tuple you have to insert the element in another tuple and then merge with previous tuple.
 
-## Stings:
+## Strings:
 
 * Strings pythons are immutable
 * In python, Strings are stored as individual characters in contiguous memory location(same as `C`).
@@ -238,4 +238,20 @@ Python interpreter also has help command which displays the section from the pyt
 		else:
 			print('Substring not found')
 		```
+		or you can write like this:
+		```py
+		s=input('enter a string: ')
+		ss=input('enter a substring: ')
+		print("Substring Found" if ss in s else "Substring not Found")
+		```
 	* **Relational Operators**
+		* eg.,
+		```py
+		>>> "RAJAT"=="RAJAT"
+		True
+		>>> "Z"!='z'
+		True
+		```
+* Slicing is same in string as it was in `list`.
+* `reverse` a string, n="united", reverse will be n[::-1] or n[-1::-1]
+* To convert a list don't do p=str(lst), if will be like `"['d', 't']"`, use `".join(lst)"`
