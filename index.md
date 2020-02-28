@@ -28,6 +28,8 @@ subtitle: >
 
 [[git]] - learning git
 
+[[xdg]] - utility to find file type and other things
+
 [[notes on c lang]] - some notes on c language
 
 ## From books
