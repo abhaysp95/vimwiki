@@ -6,12 +6,13 @@
 
 # Programs of Python language:
 
-* [O] Completed
+* [X] Completed
 	* [X] Factorial program
 	* [X] palindrome number program
 	* [X] armstrong number program
 	* [X] prime number findig program
-	* [ ] complete psd-list 8
+	* [X] complete psd-list 8
+	* [X] complete name abbreviation in C
 
 
 # Programs and works in HTML:
@@ -25,3 +26,10 @@
 # Scripts and works on Shell:
 
 * [ ] Completed
+
+# OS_Class:
+
+* [ ] Cronjob
+	* [ ] Create a folder every minute with cronjob
+	* [ ] Remove the folder every 30 sec
+	* [ ]

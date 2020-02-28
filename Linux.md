@@ -37,3 +37,18 @@ Some utility command:
 * `printf` command is used to display the given string, number or any format specifier on the terminal window. It works same way as printf works in programming languages like `C`.
 	- Commonly used format specifiers are `%s, %b, %d, %x and %f`.
 * **Capitalized letters** are treated as less than lowercase letters in test comparisions(uses standard ASCII ordering). However, sort command is just its reverse(uses __locale__ settings).
+
+## Cronjab:
+
+* * * * * *
+  | | | | |_ Day of Week [0-6] where 0 represents Sunday
+  | | | |___ Month [1-12]
+  | | |_____ Day of Month
+  | |_______
+
+
+* @reboot[command]
+* @monthly[command]
+* @yearly[command]
+* @weekly[command]
+* @daily[command]
