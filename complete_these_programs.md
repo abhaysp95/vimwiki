@@ -4,6 +4,7 @@
 * [.] Completed
 	* [X] complete psd-list 8
 	* [ ] Complete psd-stack-2
+	* [X] complete name abbreviation in C
 	* [ ] Complete queue operations with linked list
 	* [ ] Some questions on 2D array
 	* [ ] Do some basic questions for double pointer
@@ -12,25 +13,15 @@
 
 # Programs of Python language:
 
-<<<<<<< HEAD
-* [o] Completed
-=======
 * [X] Completed
->>>>>>> 4a6f0aa2e796b30c03e63611e70f5015534b4fd2
 	* [X] Factorial program
 	* [X] palindrome number program
 	* [X] armstrong number program
 	* [X] prime number findig program
-<<<<<<< HEAD
 	* [ ] Complete basic C language questions in python
 	* [ ] Learn to use `''.join()`
 	* [ ] Learn to use `lambda`
 	* [ ] Learn to use `list comprehension` effeciently
-=======
-	* [X] complete psd-list 8
-	* [X] complete name abbreviation in C
-
->>>>>>> 4a6f0aa2e796b30c03e63611e70f5015534b4fd2
 
 # Programs and works in Web Designing:
 
@@ -44,16 +35,13 @@
 # Scripts and works on Shell and general tools on linux:
 
 * [ ] Completed
-<<<<<<< HEAD
 	* [ ] Make some shortcut keys for `lf`
 	* [ ] Create an efficient previwer for `ranger`
 	* [ ] Do some question on `swtich-case`
-=======
 
 # OS_Class:
 
-* [ ] Cronjob
-	* [ ] Create a folder every minute with cronjob
-	* [ ] Remove the folder every 30 sec
-	* [ ]
->>>>>>> 4a6f0aa2e796b30c03e63611e70f5015534b4fd2
+* [X] Cronjob
+	* [X] Create a folder every minute with cronjob
+	* [X] Remove the folder every 30 sec
+	* [ ] Complete programs for different scheduling algorithms in `C` language
