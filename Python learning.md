@@ -255,3 +255,31 @@ Python interpreter also has help command which displays the section from the pyt
 * Slicing is same in string as it was in `list`.
 * `reverse` a string, n="united", reverse will be n[::-1] or n[-1::-1]
 * To convert a list don't do p=str(lst), if will be like `"['d', 't']"`, use `".join(lst)"`
+* You can do `sum(tup)` to get the sum of the elements of tuple.
+* Use `string.capitalize()` to make the first letter of sentence capitle(`title()` makes every words first letter capital).
+* `string.count('element')` gives first position of that element in string.
+* To get some specific element out of list:
+	```py
+	>>> lst=['abhay pathak', 'ayush singh', 'salman khan', 'utkarsh maurya', 'nirbhay pathak']
+	>>> for n in lst:
+		if n.endswith ("pathak"):
+			print(n)
+
+	abhay pathak
+	nirbhay pathak
+	```py
+	>>> n.find('pathak')	# currently n has value nirbhay pathak
+	8
+	>>> n.find('singh')
+	-1
+	```
+* `string.isalnum()` gives __true__ if string contains __number, alphabets or both__, anything else will give __false__
+* `string.isalpha()` only for alphabets
+* `string.isdigit()` only for digits
+* `string.lower()` gives __true__ if all alpha are in lowercase else __false__
+* `string.upper()` inverse of `.lower()`
+* `string.isspace()` gives __true__ if strings contains all space and nothing else.
+* `string.swapcase()` toggles upper and lowercase
+* `string.startwith()` same as __endwith()__ but from start
+* `string.strip()` strips space from both left and right. Other are **string.lstrip()** **string.rstrip()
+* `string.split(element)` splits from the given element(removes the element also). If no argument given then it will consider __space__ as split element by default.
