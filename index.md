@@ -5,12 +5,15 @@ subtitle: >
 ---
 # To-do list
 
-
 [[install manjaro(acer)]]- Important things before installing it.
 
 [[complete_these_programs]]
 
 [[school]]
+
+[[workout-home]] - scheduling workouts in home(for home)
+
+[[Songs and Videos]] - Some Songs and videos to grab
 
 # Table of Content
 
