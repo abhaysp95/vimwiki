@@ -48,7 +48,8 @@ Some utility command:
   | | | | |_ Day of Week [0-6] where 0 represents Sunday
   | | | |___ Month [1-12]
   | | |_____ Day of Month
-  | |_______
+  | |_______ Hour
+  | ________ Minute
 
 
 * @reboot[command]

@@ -10,9 +10,9 @@
 
 	Got uefi(gpt) partition
 
-- [ ] Make live bootable in rufus(etcher) in gpt partition
-- [ ] Test live media with non-free driver
-- [ ] Check manjaro settings manager for nvdia graphic card
+- [X] Make live bootable in rufus(etcher) in gpt partition
+- [X] Test live media with non-free driver
+- [X] Check manjaro settings manager for nvdia graphic card
 - [ ] Run following command in terminal
 
 ```bash
