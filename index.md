@@ -15,6 +15,8 @@ subtitle: >
 
 [[Songs and Videos]] - Some Songs and videos to grab
 
+[[ideas]]
+
 # Table of Content
 
 [ScreenCast](Screencast) - Testing youtube screencast
