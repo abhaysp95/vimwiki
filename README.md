@@ -10,7 +10,7 @@ Some screenshots for my notes
 ![first](sshots/vimwiki3.png)
 
 `2:`
-![first](sshots/vimwiki3.png)
+![first](sshots/vimwiki2.png)
 
 `3:`
-![first](sshots/vimwiki3.png)
+![first](sshots/vimwiki1.png)
