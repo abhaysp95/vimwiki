@@ -37,6 +37,8 @@ subtitle: >
 
 [[notes on c lang]] - some notes on c language
 
+[[Networks]]
+
 ## From books
 [Hacking](Hacking) - Name of the book is **Hacking - The art of Exploitation**
 
