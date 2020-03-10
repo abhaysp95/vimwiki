@@ -73,5 +73,50 @@ Strings can be passed to a function in a similar ways as arrays.
 	}
 ```
 
-### Strings and Pointers
+## Dynamic memory allocations:
 
+### malloc():
+The `malloc()` function reserves a block of memory of the specified number of bytes. And, it returns a `pointer` of `void` which can be casted into pointers of any form.
+
+> Syntax:
+```c
+ptr = (castType*)malloc(size);
+// Example:
+ptr = (float*)malloc(100 * sizeof(float));
+```
+The above statement allocates 400 bytes of memory. It's because the size of `float` is 4 bytes. And, the pointer `ptr` holds the address of the first byte in the allocated memory.
+
+The expression results in a `NULL` pointer if the memory can't be allocated.
+
+### calloc():
+
+The name `calloc()` stands for contiguous allocation.
+
+The `malloc()` function allocates memory and leaves the memory uninitialized. Whereas, the `calloc()` function allocates memory and initializes all bits to zero.
+
+> Syntax:
+```c
+ptr = (castType*)calloc(n, size);
+//Example
+ptr = (float *)calloc(25, sizeof(float));
+```
+The above statement allocates contiguous space memory for 25 elements of type `float`.
+
+### free():
+
+This statement frees the space allocated in the memory pointed by `ptr`.
+
+> Syntax:
+```c
+free(ptr);
+```
+
+### realloc():
+
+If the dynamically allocated memory is insufficient or more than required, you can change the size of previously allocated memory using the `realloc()` function.
+
+> Syntax:
+```c
+ptr = realloc(ptr, x);
+```
+Here, `ptr` is reallocated with a new size `x`.
