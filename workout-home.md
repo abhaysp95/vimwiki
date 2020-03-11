@@ -48,10 +48,10 @@
 
 I'll update if some new things will come to minds
 
-## Form Tao Fitness:
+## From Tao Fitness:
 > Date: 2020-03-11
 
-* **Horizontal Push***:
+* **Horizontal Push**:
 	- Level 1: Inclined Push ups
 	- Level 2: Regular Push ups
 	- Level 3: Diamond Push ups
