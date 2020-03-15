@@ -57,3 +57,22 @@ Some utility command:
 * @yearly[command]
 * @weekly[command]
 * @daily[command]
+
+# awk (utitlity/command):
+
+## Syntaxes to use:
+
+* To read `awk` command from a file(script) use `-f` flag. Like this:
+```sh
+$ cat '{print}' > command.awk
+# a file with something written in it, file.txt(containg Hey and Hii)
+$ awk -f command.awk file.txt
+Hey
+Hii
+```
+
+* To assign a value to variable, also before execution, use `-v` flag, like:
+```sh
+$ awk -v name=abhay 'BEGIN{printf "Name = %s\n", name}'
+Name = abhay
+```

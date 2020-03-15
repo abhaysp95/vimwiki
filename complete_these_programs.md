@@ -34,10 +34,10 @@
 
 # Scripts and works on Shell and general tools on linux:
 
-* [ ] Completed
-	* [ ] Make some shortcut keys for `lf`
-	* [ ] Create an efficient previwer for `ranger`
-	* [ ] Do some question on `swtich-case`
+* [X] Completed
+	* [X] Make some shortcut keys for `lf`
+	* [X] Create an efficient previwer for `ranger`
+	* [X] Do some question on `swtich-case`
 
 # OS_Class:
 

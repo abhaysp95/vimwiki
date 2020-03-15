@@ -39,6 +39,8 @@ subtitle: >
 
 [[Networks]]
 
+[[ssh in termux]] - Setup ssh host in termux/android
+
 ## From books
 [Hacking](Hacking) - Name of the book is **Hacking - The art of Exploitation**
 
