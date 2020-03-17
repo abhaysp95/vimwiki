@@ -221,7 +221,7 @@ examples:
 	  seqsequences.
 * Sequence unpacking operation can be applied to sequences to get the
   components:
-	- __Mulitple assignment statement__
+	- _Mulitple assignment statement_
 	- LHS and RHS must have equal length
 Let's take examples:
 
