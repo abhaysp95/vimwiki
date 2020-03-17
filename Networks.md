@@ -30,3 +30,15 @@ traceroute domain_name
 ```
 
 * `nmap` Network exploration tool and security/port scanner
+
+## ftp:
+
+You can setup ftp with `vsftp` and start the service, also can edit `/etc/vsftpd.conf` according to the need.
+
+### lftp:
+
+`lftp` is a command line tool with which you can access ftp, sftp, http, fish etc. It provides some nice extra features than normal `ftp` command.
+
+## vnstat:
+
+`vnstat` is a console-base network traffic monitoring utility. You can perform multiptle things, like checking live usage, query usage, view monthly usage etc.

@@ -115,3 +115,195 @@ So, to organize them we have few methods:
 * We can quickly find the length of a list by using the `len()` function
 * We'll find `len()` useful when you need to identify the number of aliens that
   still to be shot down in a game.
+
+## Tuples:
+
+A tuple consists of a number of values separated by commas
+
+```py
+>>> t = 'abhay', 'shanker', 'pathak', 101
+>>> t[2]
+'pathak'
+>>> type(t)
+<class, 'tuple'>
+>>> empty = ()
+>>> type(empty)
+<class, 'tuple'>
+>>> single = 1,
+>>> type(single)
+<class, 'tuple'>
+>>> single
+1,
+>>> single = 1
+>>> type(single)
+<class, 'int'>
+```
+
+As, you can see above to get a single tuple `comma` after that single element
+is necessary
+
+### Nesting tuples:
+
+Tuples can be nested in following way:
+
+```py
+>>> course = 'python', 'lecturer', 101
+>>> student = 'you', 20, course
+# I nested `course` tuple inside `student` tuple
+>>> course
+('python', 'lecturer', 101)
+>>> student
+('you', 20, ('python', 'lecturer', 101))
+```
+
+Important thing is that `course` tuple is copied to `student` tuple, not like
+embedde. So, If we do something like this
+
+```py
+>>> course = 'python', 'lecturer', 102
+>>> course
+('python', 'lecturer', 102)
+>>> student
+('you', 20, ('python', 'lecturer', 101))
+```
+
+As you can see, we previously made `course` a tuple element of `student`, then
+after changing `course` it's still the same. So, it copies. Changing `course`
+doesn't affects `student`.
+
+### length of tuple:
+
+Using tuples from previous headings
+```py
+>>> len(singleton)
+1
+>>> len(empty)
+0
+>>> len(student)
+3
+# it'll not show 5, cause it's treating course as a element
+>>> len(student + course)
+6
+```
+
+### more operation on tuples:
+
+Tuples can be **concatenated, repeated, indexed and sliced**. Here's some
+examples:
+
+* **Concatenation**:
+```py
+>>> student + course
+('abhay shanker', 45, ('c', 'shivam', 102), 'c', 'shivam', 103)
+>>> (course + student)[3]
+'abhay shanker'
+>>> (student + course)[2:]
+(('c', 'shivam', 102), 'c', 'shivam', 103)
+>>> (course + student)[1:6]
+>>> (course + student)[1:6]
+('shivam', 103, 'abhay shanker', 45, ('c', 'shivam', 102))
+>>> (course + student)[1:5]
+('shivam', 103, 'abhay shanker', 45)
+```
+
+* **repeatition**:
+```py
+>>> 2*student
+('abhay shanker', 45, ('c', 'shivam', 102), 'abhay shanker', 45, ('c',
+'shivam', 102))
+```
+
+## Unpacking Sequences:
+
+* Strings and tuples are examples of sequences:
+	* indexing, slicing, concatenation, repeatition operations applicable on
+	  seqsequences.
+* Sequence unpacking operation can be applied to sequences to get the
+  components:
+	- __Mulitple assignment statement__
+	- LHS and RHS must have equal length
+Let's take examples:
+
+```py
+>>> student	# from previous tuple
+('abhay shanker', 45, ('c', 'shivam', 102))
+>>> name, roll, course = student
+>>> name
+'abhay shanker'
+>>> roll
+45
+>>> course
+('c', 'shivam', 102)
+# let's take string as example as it is also sequence
+>>> a,b,c='dhanu'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+	a,b,c='dhanu'
+ValueError: too many values to unpack (expected 3)
+>>> a,b,c = 'luv'
+>>> a
+'l'
+>>> b
+'u'
+>>> c
+'v'
+>>> print(a,b,c)
+l u v
+```
+
+As you have noticed from above that, LHS should equal to RHS
+
+## Lists
+
+* Ordered sequence of values
+* Written as sequence of comma-separated values between square brackets
+* Values can be of different types:
+	- usually the items all have the same types
+
+```py
+>>> lst = [1, 2, 3]
+>>> type(lst)
+<class 'list'>
+>>> lst1 = [2, 3, 'name']
+>>> lst1
+[2, 3, 'name']
+```
+
+* List is also a sequence type:
+	* All the operations of sequence are also applicable here
+	
+```py
+>>> len(lst)
+3
+>>> lst1[1:]	# slicing
+[3, 'name']
+>>> [0] + lst1 + [10]		# concatenation
+[0, 2, 3, 'name', 10]
+>>> 3 * lst		# repeatition
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> x, y, z = lst1	# unpacking
+>>> x
+2
+>>> y
+3
+>>> z
+'name'
+```
+
+### More operations on list
+
+* lst.append(x)		     # append the value x at last pos
+* lst.extend(seq)	     # add a sequence to list(from end)
+* lst.insert(index, x)	 # insert with index and value x
+* lst.remove(x)		     # remove by value
+* lst.pop(i)		     # providing index
+* lst.pop()			     # remove from last
+* lst.index(x) `*`		     # get the value of index x
+* lst.count(x) `*`          # no. of repeatition of value x in a list
+* lst.sort()             # sort the list, elements should be of same data type
+* lst.sort(reverse=True) # sorts from descending-ascending
+* sorted(lst)  `*`          # sorts lst, but doesn't saves it(temporary)
+* lst.reverse()          # reverses the list
+
+> Note: every operation which isn't containing `*` is modifying the list
+permanantly.

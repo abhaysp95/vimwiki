@@ -76,3 +76,7 @@ Hii
 $ awk -v name=abhay 'BEGIN{printf "Name = %s\n", name}'
 Name = abhay
 ```
+
+## vmstat:
+
+`vmstat` reports information about process, memory, paging, block IO, traps, disk, cpu activity etc.

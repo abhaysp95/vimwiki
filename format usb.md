@@ -49,3 +49,31 @@ Follow these steps to delete the partion of pendrive:
 	$ sudo umount ~/cell	#**OR**
 	$ sudo umount /dev/sdX1	# now remove the pendrive
 ```
+
+## Labeling:
+
+If you formatted to `FAT` filesystem, use `mlabel`, if you formatted to `ext` file system use `e2label` to label a partition
+
+### FAT 16/32:
+
+```sh
+$ sudo pacman -S mtools
+# check you current label
+$ lsblk	# get your usb partition
+$ sudo mlabel -i /dev/sdX* -s ::
+# probably no label will be the output
+$ sudo vim /etc/mtools.con
+# add drive e :file="/dev/sdX*"
+# rest of the files is and should be commented
+$ sudo mlabel -i /dev/sdX* ::name_you_want
+```
+
+### ext*:
+
+```sh
+$ sudo pacman -S e2fsprogs
+# check current label
+$ sudo e2label /dev/sdX*
+# assign a new label
+$ sudo e2label /dev/sdX* new_label_name
+```
