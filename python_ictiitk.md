@@ -18,7 +18,8 @@
 	- lstrip() - removes whitespace from left
 	- rstrip() - removes whitespace from right
 	- strip() - removes whitespace from both sides
-* To assign a variable's value into new variable or print() use `f` at the starting and {varible's name} in parenthesis
+* To assign a variable's value into new variable or print() use `f` at the
+  starting and {variable's name} in parenthesis
 * When you're writing long numbers, you can group digits using underscores to
   make a large numbers more readable:
   ```py
@@ -271,7 +272,7 @@ As you have noticed from above that, LHS should equal to RHS
 
 * List is also a sequence type:
 	* All the operations of sequence are also applicable here
-	
+
 ```py
 >>> len(lst)
 3
