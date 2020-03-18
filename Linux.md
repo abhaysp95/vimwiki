@@ -80,3 +80,12 @@ Name = abhay
 ## vmstat:
 
 `vmstat` reports information about process, memory, paging, block IO, traps, disk, cpu activity etc.
+
+## Some notes for shell scripting:
+
+We know that `$1` is the first argument we enter in command line, e.g., *man lsd*, here $1=lsd. In the same way, `$2` is for second argument, eg., *volume up 10*. Now, here _volume_ is treated as command, _up_ is $1 and _10_ is $2.
+
+Now, let's say there's a script in which you wan't to put something, like this `volume down 15` or `volume up 10`, but if not given any numeric value it should automatically get `5` as value, then you can do like this:
+```sh
+num=$(2:-5)
+```

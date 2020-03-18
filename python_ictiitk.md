@@ -9,6 +9,8 @@
 
 > A traceback is the record of where the interprator ran into trouble while executing the code.
 
+This is just a preview for git hunk
+
 ## Strings
 
 * You can use double as well as single quotes like,
@@ -22,13 +24,13 @@
   starting and {variable's name} in parenthesis
 * When you're writing long numbers, you can group digits using underscores to
   make a large numbers more readable:
-  ```py
+  ```python
 	>>> age = 14_000_000_000
 	>>> print(age)
 	14000000000
   ```
 * You can assign values to more than one variable using just a single line:
-	```py
+	```python
 		>>> x, y, z = 0,9,3
 	```
 * Python doesn't have built-in constant types, but Python programmers use all
@@ -76,7 +78,8 @@
 * Commmands contain operations:
 	- Arithmetic, logical, relational,...
 * Multiple operations are possible in a single command
-* ![boolean operation results](/home/raytracer/dox/npython/ictiitk_python/mpv-shot0003.jpg)
+* ![boolean operation
+  results](/home/raytracer/dox/npython/ictiitk_python/python_ss/mpv-shot0003.jpg)
 # Lecture 4:
 
 * Most lists you create will be dynamic
@@ -117,11 +120,13 @@ So, to organize them we have few methods:
 * We'll find `len()` useful when you need to identify the number of aliens that
   still to be shot down in a game.
 
+# Lecture 6:
+
 ## Tuples:
 
 A tuple consists of a number of values separated by commas
 
-```py
+```python
 >>> t = 'abhay', 'shanker', 'pathak', 101
 >>> t[2]
 'pathak'
@@ -147,7 +152,7 @@ is necessary
 
 Tuples can be nested in following way:
 
-```py
+```python
 >>> course = 'python', 'lecturer', 101
 >>> student = 'you', 20, course
 # I nested `course` tuple inside `student` tuple
@@ -160,7 +165,7 @@ Tuples can be nested in following way:
 Important thing is that `course` tuple is copied to `student` tuple, not like
 embedde. So, If we do something like this
 
-```py
+```python
 >>> course = 'python', 'lecturer', 102
 >>> course
 ('python', 'lecturer', 102)
@@ -175,7 +180,7 @@ doesn't affects `student`.
 ### length of tuple:
 
 Using tuples from previous headings
-```py
+```python
 >>> len(singleton)
 1
 >>> len(empty)
@@ -193,7 +198,7 @@ Tuples can be **concatenated, repeated, indexed and sliced**. Here's some
 examples:
 
 * **Concatenation**:
-```py
+```python
 >>> student + course
 ('abhay shanker', 45, ('c', 'shivam', 102), 'c', 'shivam', 103)
 >>> (course + student)[3]
@@ -208,7 +213,7 @@ examples:
 ```
 
 * **repeatition**:
-```py
+```python
 >>> 2*student
 ('abhay shanker', 45, ('c', 'shivam', 102), 'abhay shanker', 45, ('c',
 'shivam', 102))
@@ -225,7 +230,7 @@ examples:
 	- LHS and RHS must have equal length
 Let's take examples:
 
-```py
+```python
 >>> student	# from previous tuple
 ('abhay shanker', 45, ('c', 'shivam', 102))
 >>> name, roll, course = student
@@ -261,7 +266,7 @@ As you have noticed from above that, LHS should equal to RHS
 * Values can be of different types:
 	- usually the items all have the same types
 
-```py
+```python
 >>> lst = [1, 2, 3]
 >>> type(lst)
 <class 'list'>
@@ -273,7 +278,7 @@ As you have noticed from above that, LHS should equal to RHS
 * List is also a sequence type:
 	* All the operations of sequence are also applicable here
 
-```py
+```python
 >>> len(lst)
 3
 >>> lst1[1:]	# slicing
@@ -306,5 +311,78 @@ As you have noticed from above that, LHS should equal to RHS
 * sorted(lst)  `*`          # sorts lst, but doesn't saves it(temporary)
 * lst.reverse()          # reverses the list
 
-> Note: every operation which isn't containing `*` is modifying the list
+> *Note*: every operation which isn't containing `*` is modifying the list
 permanantly.
+
+# Lecture 7:
+
+## Mutabale and Immutable types:
+
+* tuples and list types look very similar
+* however, there is one major difference: Lists are *mutable*
+	- Contents of list can be modified
+* tuples and strings are *immutable*
+	- Contents can't be modified
+
+```python
+>>> indoor = ['badminton', 'table-tennis', 'chess']
+
+>>> outdoor = ['football', 'cricket']
+>>> games = (indoor, outdoor)
+>>> type(games)
+<class, 'tuple'>
+>>> games
+(['badminton', 'table-tennis', 'chess'], ['football', 'cricket'])
+# let's take another example
+>>> lower = 'pants', 'shorts'
+>>> upper = 'shirt', 't-shirt'
+>>> type(lower)
+<class, 'tuple'>
+>>> dress = [lower, upper]
+# we don't need to cover lower/upper in `''` as they are already defined
+>>> type(dress)
+<class, 'list'>
+>>> dress
+[('pants', 'shorts'), ('shirt', 't-shirt')]
+
+# now, lets try some for mutable and immutable
+>>> games[0]
+['badminton', 'table-tennis', 'chess']
+>>> games[0] = card	# or 'card'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+    games[0] = 'card'
+TypeError: 'tuple' object does not support item assignmen
+# so, can't change tuple, it's immutable
+
+# let's make another tuple, but listing explicitly all elements
+>>> games1 = (['badminton', 'table-tennis', 'chess'], ['football', 'cricket'], ['solitaire', 'hearts', 'freecell'])
+>>> games1[:1]
+(['badminton', 'table-tennis', 'chess'],)
+>>> games1[:2] == games
+True
+>>> indoor[2] = 'carrom'
+>>> games1[:2] == games
+False
+```
+
+Now, let's resolve some questions raised above:
+* Why did tuple `games` changed when we changed `indoor` list's element?
+	- tuple `games` contains reference of lists `indoor` and `outdoor`.
+	- Thus, changing *outdoor* updated *games* as well.
+* But why `games1` didn't changed?
+	- Because it contains a different list(even though elements are same, we
+	  gave it explicitly)
+	- Two lists can have the same content
+	- Modifying one will not change the other.
+	- So, `games` and `games1` tuple elements had co-incidently same elements
+	  even though address of those elements were different
+
+So, we can also change element of `games1` tuple or should I say, elements
+inside the list of tuple `games1`
+
+```python
+>>> games1[0][2] = 'carrom'
+>>> games1[:2] == games
+True
+```

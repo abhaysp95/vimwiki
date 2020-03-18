@@ -1,6 +1,6 @@
 ---
 title: My Knowledge base
-subtitle: >
+subtitle:
 	This is a collection of things which I should learn and learned
 ---
 # To-do list
@@ -40,6 +40,8 @@ subtitle: >
 [[Networks]]
 
 [[ssh in termux]] - Setup ssh host in termux/android
+
+[[QnA]]
 
 ## From books
 [Hacking](Hacking) - Name of the book is **Hacking - The art of Exploitation**
