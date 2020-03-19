@@ -21,3 +21,9 @@
 		Well, `EOF` gives -1 as int and some weird(question mark) ascii character.
 	* [X] What's the `sizeof EOF`
 		`sizeof(EOF)` is 4, so that explains if you use anything below int(it should also be of 4 not 2), it will print something weird.
+
+## python language
+* [ ]
+	* [ ] how to append element inside the tuple which inside the list?
+	* [ ] how to append something in tuple?
+	* [ ] what are the functions and methods for tuple?

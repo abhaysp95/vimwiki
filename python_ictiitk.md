@@ -386,3 +386,138 @@ inside the list of tuple `games1`
 >>> games1[:2] == games
 True
 ```
+
+## Summary of Sequences
+
+| *Operation*    | *Meanining*                                       |
+|----------------|---------------------------------------------------|
+| seq[i]         | i-th element of the sequence                      |
+| len(seq)       | length of the sequence                            |
+| seq1 + seq2    | concatenate the two sequence                      |
+| num*seq        | repeat seq num items                              |
+| seq[start:end] | slice starting from *start* and ending at *end-1* |
+| e in seq       | True if e is present in seq, False otherwise      |
+| e not in seq   | True if e is not present in seq, False otherwise  |
+| for e in seq   | Iterate over all elements in seq                  |
+|                | (e is bound to one element per iteration)         |
+
+
+## list comprehension
+
+* A concise way to build list
+* Similar to Math's set builder notation
+* Example: let's represent square of natural numbers until 10 in set builder notation:
+	* {x*x | x _belongs to_ {1,2,3,....,10}}
+* In Python, we can say:
+
+```python
+>>> lst = [x*x for x in range(1, 11)]
+>>> lst
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+
+* Consists of a bracket containing an expression followed by a `for` clause,
+then zero or more `for` or `if` clauses.
+
+```python
+>>> nums = [-1, 25, 9, -30, 5]
+>>> pos = [x for x in nums if x > 0]
+>>> pos
+[25, 9, 5]
+
+>>> sqneg = [x*x for x in nums if x < 0]
+>>> sqneg
+[1, 900]
+
+# let's get tuple with list commprehension
+>>> abspair = [(x, abs(x)) for x in nums]
+>>> abspair
+[(-1, 1), (25, 25), (9, 9), (-30, 30), (5, 5)]
+# although it's still a list type
+>>> type(abspair)
+<class 'list'>
+```
+
+### Evaluation of list commprehension
+
+Let's understand with an example:
+
+```python
+>>> eqlst = [(x, y) for x in [1, 2, 3] for y in [12, 9, 27, 4, 50] if x
+*x == y]
+>>> eqlst
+[(2, 4), (3, 9)]
+```
+
+Now, in general the above list comprehension syntax could be given in following
+nested loop/case
+
+```python
+>>> for x in range [1, 2, 3]:
+...     for y in range [12, 9, 27, 4, 50]:
+...         if x*x == y:
+...				(x,y)
+```
+
+# sets:
+* Another kind of sequence
+* An unordered collection with no duplicate elements
+* Supports:
+	 - membership testing
+	 - eliminating duplicate entries
+	 - set operations: union, intersection, difference, and symmetric difference
+
+```python
+>>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+>>> type(basket)
+<class 'list'>
+# using set constructor to convert list 'basket' to set sequence
+>>> fruits = set(basket)
+>>> fruits
+{'pear', 'orange', 'apple', 'banana'}
+# Note: order in above given set is different to what was in the list, order isn't considered
+>>> type(fruit)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+    type(fruit)
+NameError: name 'fruit' is not defined
+>>> type(fruits)
+<class 'set'>
+>>> 'apple' in fruits
+True
+>>> 'mango' in fruits
+False
+```
+
+As, we know now, operations of sets are possible(order can be changed):
+```python
+>>> A = set('acads')
+>>> B = set('institute')
+>>> A + B
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+    A + B
+TypeError: unsupported operand type(s) for +: 'set' and 'set'
+>>> A
+{'d', 's', 'a', 'c'}
+>>> B
+{'t', 's', 'u', 'i', 'e', 'n'}
+>>> A - B	# set difference
+{'d', 'a', 'c'}
+>>> B - A	# set difference
+{'t', 'u', 'i', 'e', 'n'}
+>>> A | B	# set union
+{'d', 't', 's', 'u', 'c', 'i', 'a', 'e', 'n'}
+>>> A & B	# set intersection
+{'s'}
+>>> A ^ B	# symmetric difference
+{'t', 'c', 'i', 'e', 'd', 'u', 'a', 'n'}
+>>> (A - B) | (B - A)	# symmetric difference
+{'d', 't', 'u', 'c', 'i', 'a', 'e', 'n'}
+```
+
+## Conditional tests:
+
+Python uses the values True and False to decide whether the code in an if statement should be executed.
+Testing for equality is case sensitive in Python.
+
