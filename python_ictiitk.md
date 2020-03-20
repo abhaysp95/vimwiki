@@ -521,3 +521,36 @@ TypeError: unsupported operand type(s) for +: 'set' and 'set'
 Python uses the values True and False to decide whether the code in an if statement should be executed.
 Testing for equality is case sensitive in Python.
 
+### Checking whether a Value is in a list
+
+* Key-word `in` is used to find out whether a particular value is already in a list
+* This technique is quite powerful because you can create a list of essential values, and then easily check whether the value you're testing matches on of the values in the list.
+
+```python
+>>> wm = ['bspwm', 'awesome', 'qtile', 'dwm']
+>>> 'i3wm' in wm
+False
+>>> 'dwm' in wm
+True
+```
+
+### Checking whether value is not in a list:
+
+* Use keyword `not in` for this situation
+
+```python
+fruits = ['mango', 'apple', 'guava', 'grapes']
+fruit = 'pear'
+
+if fruit not in fruits:
+	print(f"{fruit.title()}, it has to be bought yet")
+	# or use
+	print (fruit.title(), "it has to be bought yet")
+```
+
+## Boolean Expressions
+
+* A boolean expression is just another name for a conditional test.
+* A boolean value is either **True** or **False**.
+* Boolean values are often used to keep track of certain conditions.
+* Boolean values provide an efficient way to track the state of a program or a particular condition that is important in your program.

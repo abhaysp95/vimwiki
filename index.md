@@ -50,17 +50,17 @@ subtitle:
 
 [[Linux-shell-scripting(packt)]] - Learn shell scripting in linux/unix
 
-[[Company Information]]
+[Company [Information](Information)]
 
 ## College
 
-[[Python learning]] - Learning python. Teacher - Dhananjay sir
+[Python [learning](learning)] - Learning python. Teacher - Dhananjay sir
 
-[[python_ictiitk]] - some notes from there lectures
+[[python_ictiitk](python_ictiitk)] - some notes from there lectures
 
-[[Web designing]] - Assginments and notes
+[[Web](Web) designing] - Assginments and notes
 
-[[class_os]] - Some things from OS class
+[[class_os](class_os)] - Some things from OS class
 
 [[html-class]]
 
