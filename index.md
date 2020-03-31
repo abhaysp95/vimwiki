@@ -54,7 +54,7 @@ subtitle:
 
 ## College
 
-[Python [learning](learning)] - Learning python. Teacher - Dhananjay sir
+[[Python_learning](Python_learning)] - Learning python. Teacher - Dhananjay sir
 
 [[python_ictiitk](python_ictiitk)] - some notes from there lectures
 

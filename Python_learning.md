@@ -281,5 +281,170 @@ Python interpreter also has help command which displays the section from the pyt
 * `string.isspace()` gives __true__ if strings contains all space and nothing else.
 * `string.swapcase()` toggles upper and lowercase
 * `string.startwith()` same as __endwith()__ but from start
-* `string.strip()` strips space from both left and right. Other are **string.lstrip()** **string.rstrip()
+* `string.strip()` strips space from both left and right. Other are **string.lstrip() string.rstrip()**
 * `string.split(element)` splits from the given element(removes the element also). If no argument given then it will consider __space__ as split element by default.
+
+
+## Sets
+-----------
+
+A set is an unordered collection data type with no duplicate elements Sets are iterable and mutable. The elements appear in an arbitrary order when sets are iterated.
+
+Sets are commonly used for membership testing, removing duplicates entries, and also for operations such as intersection, union and set difference.
+
+### How to create Sets
+
+Sets can be created calling the built-in set() function with a sequence or another iterable object.
+```python
+>>> # creating an empty set
+>>> setA = set()
+>>> setA
+set()
+
+>>> print(setA)
+set()
+>>> type(setA)
+<class 'set'>
+
+>>> # creating a set with a string
+>>> setA = set('coolabhays')
+>>> print(setA)
+{'c', 'y', 'a', 'l', 's', 'o', 'b', 'h'}
+>>> setA
+{'c', 'y', 'a', 'l', 's', 'o', 'b', 'h'}
+>>>
+```
+
+As you can see above, set removed all the duplicate elements inside the string. And also, it has no particular or unique order of printing.
+
+So, another example is shown below for the above mentioned characterstics of set:
+
+```python
+>>> # let's create a list
+>>> lst=[10, 20, 30, 40, 50, 40, 10, 30, 20]
+>>> lst
+[10, 20, 30, 40, 50, 40, 10, 30, 20]
+>>> strB = set(lst)
+>>> strB
+{40, 10, 50, 20, 30}
+>>>
+>>> # taking on more example
+>>> string='dhananjay'
+>>> lst = list(string)
+>>> lst
+['d', 'h', 'a', 'n', 'a', 'n', 'j', 'a', 'y']
+>>> strC = set(lst)
+>>> strC
+{'y', 'a', 'd', 'h', 'j', 'n'}
+>>>
+```
+
+### Methods of set:
+
+let's perform some methods of on set in following way:
+
+```python
+>>> # methods of set
+>>> strC.add('p')
+>>> strC
+{'y', 'a', 'p', 'd', 'h', 'j', 'n'}
+>>> # see that, 'p' is added in random place
+>>> strC.add('y')
+>>> strC
+{'y', 'a', 'p', 'd', 'h', 'j', 'n'}
+>>> # since 'y' was already in the set, so it wasn't added again
+>>>
+```
+
+We can update set with multiple elements as follow:
+
+```python
+>>> # add multiple elements
+>>> strC.update([8, 9, 10])
+>>> strC
+{'y', 'a', 'p', 8, 9, 'd', 10, 'h', 'j', 'n'}
+>>>
+```
+
+Now, we can also remove elements from set by `remove()` and `discard()` function.
+
+```python
+>>> # for removing element
+>>> strC.remove('d')
+>>> strC
+{'y', 'a', 'p', 8, 9, 10, 'h', 'j', 'n'}
+>>> strC.discard(9)
+>>> strC
+{'y', 'a', 'p', 8, 10, 'h', 'j', 'n'}
+>>>
+```
+
+Differenece between `discard` and `remove` is, let if element you are removing is not present in the set, then `remove` will give error while `discard` will not.
+
+We can also use pop to remvoe elements, it removes the first element of set.
+
+```python
+>>> # we can also use pop
+>>> strC.pop()
+'y'
+>>> strC
+{'a', 'p', 8, 10, 'h', 'j', 'n'}
+>>>
+```
+
+To remove all elements use `clear()` method
+```python
+>>> strC.clear()
+```
+
+There is also a `isdisjoint()` method, which returns `false` if even a element is common among them, else it'll return `true`.
+
+```python
+>>> # disjoint
+>>> # if common element in two sets then it'll return false, else true
+>>> seta.isdisjoint(setb)
+False
+>>> setb.isdisjoint(seta)
+False
+>>> seta.isdisjoint(seta)
+False
+>>> setA
+{'c', 'y', 'a', 'l', 's', 'o', 'b', 'h'}
+>>> seta.isdisjoint(setA)
+True
+>>>
+```
+
+### Operations on set
+
+We can perform some operations on set, like union, intersection, difference etc. They are as follow:
+
+```python
+>>> # operations on set
+>>> seta = {1, 3, 4, 2, 9}
+>>> setb = {3, 8, 6, 4, 5, 7, 1}
+>>> seta
+{1, 2, 3, 4, 9}
+>>> setb
+{1, 3, 4, 5, 6, 7, 8}
+>>>
+>>> # intersection operation
+>>> seta.intersection(setb)
+{1, 3, 4}
+>>> seta&setb
+{1, 3, 4}
+>>> # difference
+>>> seta.difference(setb)
+{9, 2}
+>>> seta - setb
+{9, 2}
+>>> setb.difference(seta)
+{8, 5, 6, 7}
+>>> # as you can see, order of variable is important in difference
+>>>
+>>> # union
+>>> seta.union(setb)
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+>>> seta|setb
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+```
