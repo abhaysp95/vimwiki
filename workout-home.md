@@ -65,7 +65,7 @@ I'll update if some new things will come to minds
 	- Level 2: Elevated feet pike press
 	- Level 3: Deep elevated pike presses
 	- Level 4: Wall handstand push-ups
-* **Vertical Push(Extension)**:
+* **Vertical Push(Extensions)**:
 	- Level 1: Bench dips(tricep dips)
 	- Level 2: Regular dips
 	- Level 3: Ring dips
