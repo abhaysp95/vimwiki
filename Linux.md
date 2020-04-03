@@ -93,5 +93,5 @@ num=$(2:-5)
 ## Get dominant color's with imagemagick
 
 ```sh
-convert ~/Path_to_image.ext +dither -color 10 -define histogram:unique-colors=true -format "%c" histogram:info: > file_name_to_store
+convert ~/Path_to_image.ext +dither -colors 10 -define histogram:unique-colors=true -format "%c" histogram:info: > file_name_to_store
 ```
