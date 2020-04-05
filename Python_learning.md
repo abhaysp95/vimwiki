@@ -54,7 +54,7 @@ In python data type doesn't matters. You can put any value in a variable in pyth
 - Can't use `-` in python
 - Python returns `true` or `false` in decision making
 - There is no increment operator in python(++,--)
-- There is new operator <> similar to (!= not equal to) doesn't works in python 3
+- There is new operator <> similar to (!= not equal to) doesn`t works in python 3
 - Assignment operators
 	* =		assignment
 	* /=	divide and assign
@@ -448,3 +448,43 @@ We can perform some operations on set, like union, intersection, difference etc.
 >>> seta|setb
 {1, 2, 3, 4, 5, 6, 7, 8, 9}
 ```
+
+## dictionaries in python:
+
+Basics are covered in videos. Here are the methods to take user input directly to dict:
+* **By using list**:
+	* We can take keys and it's values in a separate list and then we can use `zip` method to convert them into dict. Here's the syntax:-
+	```python
+	>>> alst
+	[20, 30, 40, 50]
+	>>> nlst
+	['Anuj', 'Smriti', 'Rohit', 'Piyush']
+	>>> record = dict(zip(alst, nlst))
+	# by default zip returns zip type, so we have to do type conversion to dict
+	>>> zip(alst, nlst)
+	<zip object at 0x7f6dd8cd9300>
+	>>> record
+	{20: 'Anuj', 30: 'Smriti', 40: 'Rohit', 50: 'Piyush'}
+	>>>
+	```
+* **By using `update` function**:
+	* We can use `update` function to take input from user diretoly in form of dict. Here's the syntax:-
+	```python
+	>>> game = {}
+	>>> for _ in range(4):
+	...     game.update( {input('Enter key: '): int(input('Enter int value: '))})
+	...
+	...
+	Enter key: nfsmw
+	Enter int value: 2005
+	Enter key: nfsc
+	Enter int value: 2006
+	Enter key: nfsw
+	Enter int value: 2010
+	Enter key: nfsr
+	Enter int value: 2011
+	>>> game
+	{'nfsmw': 2005, 'nfsc': 2006, 'nfsw': 2010, 'nfsr': 2011}
+	>>> type(game)
+	<class 'dict'>
+	```

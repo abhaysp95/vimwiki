@@ -95,3 +95,9 @@ num=$(2:-5)
 ```sh
 convert ~/Path_to_image.ext +dither -colors 10 -define histogram:unique-colors=true -format "%c" histogram:info: > file_name_to_store
 ```
+
+## rsync:
+
+```sh
+rsync -avrh -e 'ssh -p 2222' --ignore-existing ~/Pictures/bgwallpapers/luke_wall raytracer@192.168.43.247:/home/raytracer/Pictures/bgwallpapers/luke_wall
+```

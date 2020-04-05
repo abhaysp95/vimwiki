@@ -58,7 +58,8 @@ subtitle:
 
 [[python_ictiitk](python_ictiitk)] - some notes from there lectures
 
-[[Web](Web) designing] - Assginments and notes
+[[Web designing](Web designing)] - Assginments and notes
+	- [[CSS](CSS)] - Some notes for cascading style sheets
 
 [[class_os](class_os)] - Some things from OS class
 
