@@ -121,3 +121,9 @@ If the dynamically allocated memory is insufficient or more than required, you c
 ptr = realloc(ptr, x);
 ```
 Here, `ptr` is reallocated with a new size `x`.
+
+## Function pointer:
+
+Things I noticed from function pointer:
+* In this type, that function body should be before the declaration of function,
+* No need for predeclaration of function
