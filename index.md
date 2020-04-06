@@ -14,11 +14,11 @@
 
 # To-do list 
 
-* [[install manjaro-acer](install manjaro-acer)]- Important things before installing it.
+* [[install_manjaro-acer](install_manjaro-acer)]- Important things before installing it.
 * [[complete_these_programs](complete_these_programs)]
 * [[school](school)]
 * [[workout-home](workout-home)] - scheduling workouts in home(for home)
-* [[Songs and Videos](Songs and Videos)] - Some Songs and videos to grab
+* [[Songs_and_Videos](Songs_and_Videos)] - Some Songs and videos to grab
 * [[ideas](ideas)]
 
 # Learning 
@@ -57,6 +57,6 @@
 ## College
 * [[Python_learning](Python_learning)] - Learning python. Teacher - Dhananjay sir
 * [[python_ictiitk](python_ictiitk)] - some notes from there lectures
- 
+
 [[QnA](QnA)]
 raytracer - read@reddit6
