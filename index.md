@@ -1,27 +1,8 @@
-# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
- ▄▄       ▄▄  ▄         ▄ 
-▐░░▌     ▐░░▌▐░▌       ▐░▌
-▐░▌░▌   ▐░▐░▌▐░▌       ▐░▌
-▐░▌▐░▌ ▐░▌▐░▌▐░▌       ▐░▌
-▐░▌ ▐░▐░▌ ▐░▌▐░█▄▄▄▄▄▄▄█░▌
-▐░▌  ▐░▌  ▐░▌▐░░░░░░░░░░░▌
-▐░▌   ▀   ▐░▌ ▀▀▀▀█░█▀▀▀▀ 
-▐░▌       ▐░▌     ▐░▌
-▐░▌       ▐░▌     ▐░▌
-▐░▌       ▐░▌     ▐░▌
- ▀         ▀       ▀ 
- ▄▄        ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
-▐░░▌      ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
-▐░▌░▌     ▐░▌▐░█▀▀▀▀▀▀▀█░▌ ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ 
-▐░▌▐░▌    ▐░▌▐░▌       ▐░▌     ▐░▌     ▐░▌          ▐░▌
-▐░▌ ▐░▌   ▐░▌▐░▌       ▐░▌     ▐░▌     ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ 
-▐░▌  ▐░▌  ▐░▌▐░▌       ▐░▌     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
-▐░▌   ▐░▌ ▐░▌▐░▌       ▐░▌     ▐░▌     ▐░█▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀█░▌
-▐░▌    ▐░▌▐░▌▐░▌       ▐░▌     ▐░▌     ▐░▌                    ▐░▌
-▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌     ▐░▌     ▐░█▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄█░▌
-▐░▌      ▐░░▌▐░░░░░░░░░░░▌     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
- ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀       ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
-# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# <<<<<<<<<<<<<<>>>>>>>>>>>>>>
+# <							 >
+# <			MY NOTES		 >
+# <							 >
+# <<<<<<<<<<<<<<>>>>>>>>>>>>>>
 
 # Table of Content
 	- **To-do list**
@@ -36,12 +17,12 @@
 
 # To-do list 
 
-* [install manjaro(acer)](install manjaro(acer))]- Important things before installing it.
-* [complete_these_programs](complete_these_programs)]
-* [school](school)]
-* [workout-home](workout-home)] - scheduling workouts in home(for home)
-* [Songs and Videos](Songs and Videos)] - Some Songs and videos to grab
-* [ideas](ideas)]
+* [[install manjaro-acer](install manjaro-acer)]- Important things before installing it.
+* [[complete_these_programs](complete_these_programs)]
+* [[school](school)]
+* [[workout-home](workout-home)] - scheduling workouts in home(for home)
+* [[Songs and Videos](Songs and Videos)] - Some Songs and videos to grab
+* [[ideas](ideas)]
 
 # Learning 
 
@@ -65,12 +46,12 @@
 * [[class_os](class_os)] - Some things from OS class
 
 ## notes from online and other sources:
-* [[Web designing](Web designing)] - Assginments and notes
+* [[Web-designing](Web-designing)] - Assginments and notes
 	- [[CSS](CSS)] - Some notes for cascading style sheets
 
 # From books
 
-* Hacking - TAoE](Hacking) - Name of the book is **Hacking - The art of Exploitation**
+* [[Hacking-TAoE](Hacking-TAoE)] - Name of the book is **Hacking - The art of Exploitation**
 * [Command-line-and-shell](Command-line-and-shell)] - Full name of book is Linux command line and shell scripting bible by **Richard Blum** and **Christine Bresnahan**
 * [Linux-shell-scripting(packt)](Linux-shell-scripting(packt))] - Learn shell scripting in linux/unix
 
