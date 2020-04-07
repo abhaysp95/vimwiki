@@ -3,6 +3,23 @@
 
 I'm jotting down some points, according to the need
 
+## Element selector
+
+### tag selector
+Selects according to the given tag, like _<p> or <b>_
+
+### id selector
+Selects with id of tag. Id shouldn't start with a `number.`
+
+### class selector
+Selects according to the given class, either give tag then class or only classname to select without miniding tags. Like, p.cl1 {} or .cl1{}
+
+### universal selector
+This above rule will affect every HTML element on the page: `*{}`
+
+### grouping selector
+The grouping selector selects all the HTML elements with the same style definitions.
+
 ## The Position Property
 
 The `positon` property specifies the type of positioning method used for an element.
