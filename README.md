@@ -4,7 +4,7 @@ Here I put my institutional, personal and other types of notes. I update them as
 
 Visit the `index` file of this repo to get the overlook of notes.
 
-![table of contents](index.md)
+[table of contents](index.md)
 
 ### Screenshots
 
