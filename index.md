@@ -45,6 +45,7 @@
 ## notes from online and other sources:
 * [[Web-designing](Web-designing)] - Assginments and notes
 	- [[CSS](CSS)] - Some notes for cascading style sheets
+	- [[OS-things](OS-things)]
 
 # From books
 

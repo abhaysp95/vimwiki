@@ -47,6 +47,17 @@
 * `Bonus:genact - Pretending to do work`:
 	+- Pretends to be a legitimate tool
 	+- Actually doesn't really do anything
+	
+# some memory and cpu commands
+
+* `show memory`
+	* free -h | awk '/^Mem:/ {print $3 " / " $2}'
+* `cpu temperature`
+	* sensors | head -n 5 | awk '/^temp1/ {print $2}'
+* `memory intensive process`
+	* ps axch -o cmd:15,%mem --sort=-%mem | head
+* `cpu intensive process`
+	* ps axch -o cmd:15,%cpu --sort=-%cpu | head
 
 -> About me
 ------------
