@@ -554,3 +554,11 @@ if fruit not in fruits:
 * A boolean value is either **True** or **False**.
 * Boolean values are often used to keep track of certain conditions.
 * Boolean values provide an efficient way to track the state of a program or a particular condition that is important in your program.
+
+# OOP
+
+## Class
+In OOP, you write classes that represents the real world things and situations, and you create objects based on these classes. When you write a class, you define a general behaviour that a whole category of obejects could have.
+You can then give some specific objects there specific behaviour also.
+
+Making an **Object** from a class is called `Instantiation.`
