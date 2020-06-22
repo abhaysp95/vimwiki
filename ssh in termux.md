@@ -83,15 +83,29 @@ $ sshd
 $ ssh-keygen
 $ whoami # remember, this is user name in termux
 ```
+
+Create a password for this user:
+```sh
+$ passwd
+```
+
 This will start and give you prompt to ask the `path` to save your public and private key as host. If you give no passphrase by default it will store in `~/.ssh`. Both public and private keys will be stored. Now, copy the file `id_rsa` from your mobile to desktop.
 
 This is to be done so it'll not prompt for password in time of connection, as you don't have a user passwd in termux.
 
 ### in desktop
+
 ```sh
 $ mkdir -p ~/.ssh/ssh_termux
 # copy the id_rsa file from mobile to here
 ```
+
+Or, you can use `ssh-copy-id` to copy the public id of your mobile to you host node.
+```sh
+$ ssh-copy-id -p <port_num> <username>@<domain_name/ip_addr>  # of your desktop
+```
+
+If ask for password, enter the password you created in termux.
 
 ### connection
 
@@ -109,4 +123,4 @@ There you can change ssh server related settings, but be careful. Now, it's time
 $ ssh user_name@192.168.***.*** -p 8022 -i ~/.ssh/ssh_termux/id_rsa
 ```
 
-On entering the above command, it will connect your mobile as ssh host to desktop as ssh client. It will prompt you for nothing.
+On entering the above command, it will connect your mobile as ssh client to desktop which is ssh host. It will prompt you for nothing.
