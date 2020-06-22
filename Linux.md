@@ -44,12 +44,14 @@ Some utility command:
 
 ## Cronjab:
 
+```
 * * * * * *
   | | | | |_ Day of Week [0-6] where 0 represents Sunday
   | | | |___ Month [1-12]
   | | |_____ Day of Month
   | |_______ Hour
   | ________ Minute
+```
 
 
 * @reboot[command]
@@ -93,11 +95,13 @@ num=$(2:-5)
 ## Get dominant color's with imagemagick
 
 ```sh
-convert ~/Path_to_image.ext +dither -colors 10 -define histogram:unique-colors=true -format "%c" histogram:info: > file_name_to_store
+convert ~/Path_to_image.ext +dither -colors 10 -define histogram:unique-colors=true \
+-format "%c" histogram:info: > file_name_to_store
 ```
 
 ## rsync:
 
 ```sh
-rsync -avrh -e 'ssh -p 2222' --ignore-existing ~/Pictures/bgwallpapers/luke_wall raytracer@192.168.43.247:/home/raytracer/Pictures/bgwallpapers/luke_wall
+rsync -avrh -e 'ssh -p 2222' --ignore-existing ~/Pictures/bgwallpapers/luke_wall \
+raytracer@192.168.43.247:/home/raytracer/Pictures/bgwallpapers/luke_wall
 ```
